@@ -179,7 +179,6 @@ def render_sidebar():
         <a href="/Rainfall_Clustering" target="_self">Rainfall Clustering</a>
         <a href="/Model" target="_self">Model</a>
         <a href="/Forecast" target="_self">Forecast</a>
-        <a href="/About_Us" target="_self">About Us</a>
     </div>
     """, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
@@ -223,9 +222,6 @@ else:
     elif page == "Forecast":
         st.markdown("### Forecast ☔️")
         st.write("View future rainfall predictions in this section.")
-    elif page == "About_Us":
-        st.markdown("### About Us ☔️")
-        st.write("Learn more about the team behind this dashboard.")
     else:
         st.markdown("### Unknown Page ☔️")
         st.write("This page is not recognized. Please use the sidebar to navigate.")
