@@ -196,8 +196,8 @@ render_navbar()
 # Conditional Sidebar and Content
 if page == "Home":
     # Home page content
-    banner = Image.open("./assets/banne.jpg") if os.path.exists("./assets/banne.jpg") else Image.new("RGB", (800, 200), "#e0f7fa")
-    st.image(banner, use_container_width=True, output_format="JPEG", caption="Rainfall Trends & Forecasting in Bangladesh")
+    banner = Image.open("./assets/banner.jpg") if os.path.exists("./assets/banner.jpg") else Image.new("RGB", (800, 200), "#e0f7fa")
+    st.image(banner, use_column_width=True, output_format="JPEG", caption="Rainfall Trends & Forecasting in Bangladesh")
     st.markdown("""
     ### Welcome to the Rainfall Analysis & Forecasting App ☔️
     Navigate using the sidebar (available on other pages) to explore various sections.
