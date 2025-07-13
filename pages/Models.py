@@ -113,7 +113,7 @@ def load_model_preds():
     results = {}
     for name, path in _model_files.items():
         try:
-            model = joblib.load(f"model/{path}")
+            model = joblib.load(f"./model/{path}")
             if name == "Prophet":
                 y_true, y_pred = load_prophet_test_data_and_predict(model)
             else:
